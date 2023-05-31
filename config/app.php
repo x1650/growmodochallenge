@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://michaeldcl.cloud/'),
+    'url' => env('APP_URL', 'https://growmodochallenge.herokuapp.com/'),
 
     'asset_url' => env('ASSET_URL'),
 
