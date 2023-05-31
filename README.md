@@ -49,6 +49,8 @@ Open another terminal and run
   php artisan serve
 ```
 
+The app will run at http://127.0.0.1:8000
+
 
 ## About Laravel
 
