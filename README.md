@@ -54,6 +54,7 @@ The app will run at http://127.0.0.1:8000 and you will be redirected to login pa
 Use the ff credentials:
 
 Username: admin
+
 Password: test
 
 
