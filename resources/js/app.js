@@ -1,22 +1,13 @@
- require('./bootstrap');
- window.Vue = require('vue');
- import App from './App.vue';
- import VueAxios from 'vue-axios';
- import { createRouter, createWebHistory } from 'vue-router';
- 
- import axios from 'axios';
- import { routes } from './routes';
- 
- Vue.use(VueRouter);
- Vue.use(VueAxios, axios);
+import './bootstrap';
 
- const router = createRouter({
-    history: createWebHistory(),
-    routes: routes
-});
-  
- const app = new Vue({
-     el: '#app',
-     router: router,
-     render: h => h(App),
- });
+
+import { createApp } from 'vue';
+import router from './router.js';
+import App from './components/Example.vue';
+
+
+
+createApp(App)
+    .use(router)
+    .mount("#app")
+    
