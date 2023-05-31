@@ -16,11 +16,19 @@ use App\Http\Controllers\APIController;
 |
 */
 
+
+Route::middleware('auth:sanctum')->group(function () {
+    Route::resource('products', ProductController::class);
+});
+
+Route::post('/register', [LoginController::class, 'register']);  
+Route::post('/login', [LoginController::class, 'Login']);  
+
 Route::middleware('auth:sanctum')->get('/records', [APIController::class, 'index']);
 Route::middleware('auth:sanctum')->delete('/records/delete/{id}', [APIController::class, 'delete']);
 Route::middleware('auth:sanctum')->patch('/records/update', [APIController::class, 'update']);
 
-
-Route::post('/register', [LoginController::class, 'register']);  
-Route::post('/login', [LoginController::class, 'Login']);  
+Route::middleware('auth:sanctum')->get('/endpoint', function () {
+    // Accessible only if the token is authenticated
+});
 
