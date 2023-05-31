@@ -32,6 +32,7 @@ DB_DATABASE=growmodo_challenge
 DB_USERNAME=root
 DB_PASSWORD=
 
+```
 
 
 ## Run the Application
