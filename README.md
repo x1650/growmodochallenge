@@ -18,6 +18,22 @@ To install the app dependencies, open a terminal and run
 ```
 
 
+## Upload the SQL file and Update .env file
+
+Upload the SQL file (growmodo_challenge.sql) to your mysql server. 
+
+Once the database is ready, update your .env file for the database configuration. Here is an example:
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=growmodo_challenge
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+
 ## Run the Application
 
 To run this project, open a terminal and run
